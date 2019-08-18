@@ -1,2 +1,2 @@
 # AuthEasy
-An attempt to build an express middleware that simplifies authentication processes
+An attempt to build a NodeJS module that simplifies authentication processes with MongoDB as the database
