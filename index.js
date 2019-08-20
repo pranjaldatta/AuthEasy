@@ -52,9 +52,9 @@ function setUri(uri , reset = false , useNewUrlParser = true){
  * @param {string} uri
  * @param {bool} useNewUrlParser 
  */
-function connect(){
+async function connect(){
 
-    mongoose.connect(workingUri, {useNewUrlParser : _newUrlParser}, function(err){
+    await mongoose.connect(workingUri, {useNewUrlParser : _newUrlParser}, function(err){
         if(err == null){
             console.log("Connected successfully!");
         }
@@ -63,6 +63,7 @@ function connect(){
         }
 
     });
+
 }
 
 
