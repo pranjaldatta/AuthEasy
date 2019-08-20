@@ -14,3 +14,4 @@ An attempt to build an express middleware that simplifies authentication process
 3. SHA 512 and few other 
 
 NOTE:  USER SHOULD BE CONCERNED WITH ONLY 5-6 LINES
+An attempt to build a NodeJS module that simplifies authentication processes with MongoDB as the database
