@@ -73,3 +73,4 @@ module.exports.connect = connect;
 module.exports.register = require("./lib/register");
 module.exports.login = require("./lib/login");
 module.exports.schema = require("./lib/schema");
+module.exports.resetPass = require("./lib/sendResetMail");

@@ -1,0 +1,3 @@
+1 .  Create a global mongoose file to perform mongoose ops
+2.   Create a global function to perform bcrypt ops
+3.  Create global smtp config
