@@ -8,7 +8,7 @@ var fs = require("fs");
 
 var mongoose = require('mongoose');
 
-const uri = "mongodb+srv://pranjaldatta:cU7E3wBIp6zwWITQ@yusodb-qus7o.mongodb.net/test?retryWrites=true&w=majority";
+const uri = "<your mongo uri>";
 index.setUri(uri, false, useNewUrlParser = true);
 
 //we define our custom schema
@@ -38,7 +38,7 @@ index.connect()
         await index.register.SyncRegister(obj , 10)
         
         //Logging in a user. res holds true/false i.e. if user is registered or not respectively
-        var res = await index.login.SyncLogin({username : "pranjaldatta123" } , "hello" );
+        var res = await index.login.SyncLogin({username : "random1" } , "hello" );
         
         //defining Google OAuth Credentials. Recommended : Store all creds in a keys.js (name it whatever you want) and use 
         //them like this.
@@ -46,7 +46,7 @@ index.connect()
             "clientID" : keys.clientID,
             "clientSecret" : keys.clientSecret,
             'refreshToken' : keys.refreshToken,
-            "senderAddr" : "dattapranjal27@gmail.com"
+            "senderAddr" : "somesender@gmail.com"
 
         }
 
@@ -76,7 +76,7 @@ index.connect()
         var resp = null
         
         //send the reset mail! 
-        index.resetPass.sendResetMail({username : "pranjaldatta123"} , 10 , mail ).then(function(val) {
+        index.resetPass.sendResetMail({username : "random1"} , 10 , mail ).then(function(val) {
             console.log( val)
         })
 
