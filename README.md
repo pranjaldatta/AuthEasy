@@ -1,5 +1,7 @@
 # AuthEasy
-An attempt to build a NodeJS library that simplifies authentication processes
+An attempt to build a NodeJS library that simplifies authentication processes.
+
+In Progress.
 
 ### How to make it better?
  1. While the async login/register functions have been built with sync practices, issue arises in trial.js where each function     call has to be done with async-await to enforce sync characteritics. While this may not be an issue in regular applications
